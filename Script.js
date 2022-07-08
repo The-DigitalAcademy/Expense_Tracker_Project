@@ -1,17 +1,12 @@
-const balance = document.getElementById('balance');
-const money_plus = document.getElementById('money-plus');
-const money_minus = document.getElementById('money-minus');
-const list = document.getElementById('list');
-const form = document.getElementById('form');
-const text = document.getElementById('text');
-const amount = document.getElementById('amount');
+var balance = document.getElementById('balance');
+var money_plus = document.getElementById('money-plus');
+var money_minus = document.getElementById('money-minus');
+var list = document.getElementById('list');
+var form = document.getElementById('form');
+var text = document.getElementById('text');
+var amount = document.getElementById('amount');
 
-// const dummyTransactions = [
-//   { id: 1, text: 'Flower', amount: -20 },
-//   { id: 2, text: 'Salary', amount: 300 },
-//   { id: 3, text: 'Book', amount: -10 },
-//   { id: 4, text: 'Camera', amount: 150 }
-// ];
+
 
 const localStorageTransactions = JSON.parse(
   localStorage.getItem('transactions')
@@ -20,7 +15,7 @@ const localStorageTransactions = JSON.parse(
 let transactions =
   localStorage.getItem('transactions') !== null ? localStorageTransactions : [];
 
-// Add transaction
+
 function addTransaction(e) {
   e.preventDefault();
 
@@ -46,19 +41,17 @@ function addTransaction(e) {
   }
 }
 
-// Generate random ID
 function generateID() {
   return Math.floor(Math.random() * 100000000);
 }
 
-// Add transactions to DOM list
 function addTransactionDOM(transaction) {
-  // Get sign
+  
   const sign = transaction.amount < 0 ? '-' : '+';
 
   const item = document.createElement('li');
 
-  // Add class based on value
+
   item.classList.add(transaction.amount < 0 ? 'minus' : 'plus');
 
   item.innerHTML = `
@@ -72,25 +65,25 @@ function addTransactionDOM(transaction) {
   list.appendChild(item);
 }
 
-// Update the balance, income and expense
+
 function updateValues() {
-  const amounts = transactions.map(transaction => transaction.amount);
+  var amounts = transactions.map(transaction => transaction.amount);
 
-  const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
+  var total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
 
-  const income = amounts
+  var income = amounts
     .filter(item => item > 0)
     .reduce((acc, item) => (acc += item), 0)
     .toFixed(2);
 
-  const expense = (
+  var expense = (
     amounts.filter(item => item < 0).reduce((acc, item) => (acc += item), 0) *
     -1
   ).toFixed(2);
 
-  balance.innerText = `$${total}`;
-  money_plus.innerText = `$${income}`;
-  money_minus.innerText = `$${expense}`;
+  balance.innerText = `R${total}`;
+  money_plus.innerText = `R${income}`;
+  money_minus.innerText = `R${expense}`;
 }
 
 // Remove transaction by ID
