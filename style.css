@@ -1,154 +1,90 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
-:root {
-  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+*{
+    margin:0;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-* {
-  box-sizing: border-box;
+body{
+    background:#bbc2d2;
+    color:#d97798;
+    text-decoration: underline;
 }
 
-body {
-  background-color: #f7f7f7;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
-  font-family: 'Lato', sans-serif;
+.title{
+    width: 500px;
+    color:#0c0e0f;
+    margin:3% auto;
 }
 
-.container {
-  margin: 30px auto;
-  width: 350px;
+.content{
+    width: 580px;
+    margin: 0 auto;
+    background-color:#0c0e0f;
+    padding: 3%;
+    padding-left: 6%;
 }
 
-h1 {
-  letter-spacing: 1px;
-  margin: 0;
+#secondTitle{
+
+    margin-right: 100px;
+    text-align:left;
+    margin: 2% 0;
+    font-weight: 100;
 }
 
-h3 {
-  border-bottom: 1px solid #bbb;
-  padding-bottom: 10px;
-  margin: 40px 0 10px;
+.form{
+    padding: 5px;
 }
 
-h4 {
-  margin: 0;
-  text-transform: uppercase;
+.formLine{
+    display: inline-flex;
+    padding: 5px 0px;
+    margin-left: 10em;
 }
 
-.inc-exp-container {
-  background-color: #fff;
-  box-shadow: var(--box-shadow);
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
+
+input, select{
+    width: 130px;
+    margin-left: 10px;
 }
 
-.inc-exp-container > div {
-  flex: 1;
-  text-align: center;
+/* table style */
+table{
+    width: 100%;
 }
 
-.inc-exp-container > div:first-of-type {
-  border-right: 1px solid #dedede;
+thead{
+    background-color:#f0f3fa;
+    line-height: 30px;
 }
 
-.money {
-  font-size: 20px;
-  letter-spacing: 1px;
-  margin: 5px 0;
+/* Button */
+
+button{
+    width: 200px;
+    color:#fff; 
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 20px;
+    background-color: #bf0462;
+    border-radius: 5px;
+    margin: 14px 25%;
+    cursor: pointer;
 }
 
-.money.plus {
-  color: #c9cc2e;
+a{
+    
+    cursor: pointer;
 }
-
-.money.minus {
-  color: #35c02b;
+#center
+{
+    margin-left: 15em;
 }
-
-label {
-  display: inline-block;
-  margin: 10px 0;
+#name
+{
+    margin-left: 47px;
 }
-
-input[type='text'],
-input[type='number'] {
-  border: 1px solid #dedede;
-  border-radius: 2px;
-  display: block;
-  font-size: 16px;
-  padding: 10px;
-  width: 100%;
+#amount
+{
+    margin-left: 36px;
 }
-
-.btn {
-  cursor: pointer;
-  background-color: #1d0476;
-  box-shadow: var(--box-shadow);
-  color: #fff;
-  border: 0;
-  display: block;
-  font-size: 16px;
-  margin: 10px 0 30px;
-  padding: 10px;
-  width: 100%;
-}
-
-.btn:focus,
-.delete-btn:focus {
-  outline: 0;
-}
-
-.list {
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 40px;
-}
-
-.list li {
-  background-color: #fff;
-  box-shadow: var(--box-shadow);
-  color: #333;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding: 10px;
-  margin: 10px 0;
-}
-
-.list li.plus {
-  border-right: 5px solid #090d0a;
-}
-
-.list li.minus {
-  border-right: 5px solid #040404;
-}
-
-.delete-btn {
-  cursor: pointer;
-  background-color: #171514;
-  border: 0;
-  color: #fff;
-  font-size: 20px;
-  line-height: 20px;
-  padding: 2px 5px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-100%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.list li:hover .delete-btn {
-  opacity: 1;
-}
-Open index.html in Browser
-Let's open the index.html file in the browser and you will be able to see the following screen:
-
