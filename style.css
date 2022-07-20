@@ -4,28 +4,24 @@
 }
 
 body{
-    background:#bbc2d2;
-    color:#d97798;
-    text-decoration: underline;
+    background:#eef0f4;
+    color:#060707;
 }
 
 .title{
     width: 500px;
-    color:#0c0e0f;
+    color:#050b0e;
     margin:3% auto;
+
 }
 
 .content{
-    width: 580px;
+    width: 600px;
     margin: 0 auto;
-    background-color:#0c0e0f;
-    padding: 3%;
     padding-left: 6%;
 }
 
-#secondTitle{
-
-    margin-right: 100px;
+.secondTitle{
     text-align:left;
     margin: 2% 0;
     font-weight: 100;
@@ -38,9 +34,16 @@ body{
 .formLine{
     display: inline-flex;
     padding: 5px 0px;
-    margin-left: 10em;
 }
 
+.left{
+    float: left;
+}
+
+.right{
+    float:right;
+    margin-right: 100px;
+}
 
 input, select{
     width: 130px;
@@ -53,7 +56,7 @@ table{
 }
 
 thead{
-    background-color:#f0f3fa;
+    background-color:#f2f4f8;
     line-height: 30px;
 }
 
@@ -61,30 +64,38 @@ thead{
 
 button{
     width: 200px;
-    color:#fff; 
+    color:rgb(11, 5, 5); 
     padding: 10px;
     text-align: center;
     font-size: 1.1em;
     line-height: 20px;
-    background-color: #bf0462;
+    background-color: #1f7d20;
     border-radius: 5px;
     margin: 14px 25%;
     cursor: pointer;
 }
 
 a{
-    
+    text-decoration: underline;
     cursor: pointer;
-}
-#center
-{
-    margin-left: 15em;
 }
 #name
 {
-    margin-left: 47px;
+    margin-left: 30px;
+}
+#type, #date
+{
+    margin-left: 40px;
 }
 #amount
 {
-    margin-left: 36px;
+    margin-left: 18px;
+}
+#center
+{
+    margin-left: 150px;
+}
+#titleCenter
+{
+    margin-left: 290px;
 }

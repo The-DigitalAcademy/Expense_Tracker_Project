@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Expense Tracker App</title>
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" 
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1 class="title">Expense Tracker App</h1>
-    <header>
-
-    <section class="content">
-       <div id="center"><h3 id="secondTitle">Balance </h3></div>
-        <div class="form">
-            <form id="expForm">
-                <div class="formLine">
-                    <span for="type">Money type:</span>
-                    <select id="type">
-                        <option value="chooseOne">Choose one</option>
-                        <option value="Card">Card</option>
-                        <option value="Cash">Cash</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                <br><br>
-                <div class="formLine">
-                    <span for="name">Name:</span>
-                    <input type="text" id="name">
-                </div>
-
-                <br><br>
-                </div>
-                <div class="formLine">
-                    <span for="amount">Amount:</span>
-                    <input type="text" id="amount">
-                </div>
-                <button type="submit" class="buttonSave">Add a new expense</button>
-            </form>
+        <div id="titleCenter">
+        <h1 class="title">Expense Tracker </h1>
         </div>
-    </section>
-    <section class="content">
-        <table class="table">
-            <thead>
-                <tr>
-                   
-                </tr>
-            </thead>
-            <tbody id="expenseTable">
+        <header>
 
-            </tbody>
-        </table>
-    </section>
-    <script src="app.js"></script>
+            <section class="content">
+                <div class="form">
+                    <form id="expForm">
+                        <div id="center">
+                            <div id="typeCSS">
+                                <span for="type">Type:</span>
+                                <select id="type">
+                                    <option value="chooseOne">Choose one...</option>
+                                    <option value="Card">Card</option>
+                                    <option value="Cash">Cash</option>
+                                    <option value="Cryptocoin">Cryptocoin</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <span for="name">Name:</span>
+                                <input type="text" id="name">
+                            </div>
+                            <br><br>
+                            <br>
+                            <br>
+                            <div>
+                                <span for="date">Date:</span>
+                                <input type="date" id="date">
+                            </div>
+                            <br>
+                            <div>
+                                <span for="amount">Amount:</span>
+                                <input type="text" id="amount">
+                            </div>
+                        </div>
+                        <br>
+                        <button type="submit" class="buttonSave">Add a new expense</button 
+
+                    </form>
+                </div>
+            </section>
+            <section class="content">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Options</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expenseTable">
+
+                    </tbody>
+                </table>
+            </section>
+            <script src="app.js"></script>
 </body>
+
 </html>
