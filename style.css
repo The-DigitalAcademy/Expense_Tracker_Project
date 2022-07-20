@@ -25,7 +25,7 @@ body{
     text-align:left;
     margin: 2% 0;
     font-weight: 100;
-}
+} 
 
 .form{
     padding: 5px;
@@ -98,4 +98,23 @@ a{
 #titleCenter
 {
     margin-left: 290px;
+}
+
+.lead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.balance{
+    color: blue;
+}
+
+.income{
+    color: green;
+}
+
+.expense{
+    color: red;
 }
