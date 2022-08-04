@@ -53,12 +53,22 @@
                        
                           <div class="lead">
                             <h3 class="balance">BALANCE</h3><span id="balanceS">R5000</span>
-                            <h3 class="income">INCOME</h3><span id="incomeS">R3000</span>
-                            <h3 class="expense">EXPENSE</h3><span id="expenseS">R500</span>
+                            <h3 class="income">INCOME</h3><span id="incomeS">R0</span>
+                            <h3 class="expense">EXPENSE</h3><span id="expenseS">R0</span>
                           </div>
                           <br><br>
-                          <button type="submit" class="buttonSave">Add a new expense</button>
+                          <button style="background-color: red;" type="submit" class="buttonSave">- expense</button>
                         </form>
+                        <div>
+                            <br><br>
+                            <div>
+                                <span for="addIncome">Income:</span>
+                                <input type="text" id="addIncome">
+                            </div>
+                            <br><br>
+                            <button onclick="btnIncome()" type="submit" class="buttonSave">+ income</button>
+                        </form>
+                        </div>
                 </div>
             </section>
             <section class="content">

@@ -4,6 +4,19 @@ document.getElementById('expForm').addEventListener('submit', addExpense);
 const expenses = JSON.parse(localStorage.getItem('expenses')) || [];
 
 function addExpense(e){
+
+    let addBalance = document.getElementById('balanceS').innerText;
+    let newBal = parseInt(addBalance.replace('R',''));
+
+    let amountText = parseInt(document.getElementById('amount').value);
+
+    total = newBal - amountText;
+
+    document.getElementById('expenseS').innerHTML = "R"+amountText;
+    document.getElementById('balanceS').innerHTML = "R"+total;
+
+
+
     e.preventDefault();
 
     // get type, name, date, and amount
@@ -63,6 +76,20 @@ const deleteExpense = (id) => {
     // localStorage
     localStorage.setItem('expenses', JSON.stringify(expenses));
     showExpenses();
+}
+function btnIncome()
+{
+    let incomeNum = parseInt(document.getElementById('addIncome').value);
+    document.getElementById('incomeS').innerHTML = "R"+incomeNum;
+
+    let addBalance = document.getElementById('balanceS').innerText;
+    let newBal = parseInt(addBalance.replace('R',''));
+
+    let total = newBal + incomeNum;
+
+    document.getElementById('balanceS').innerHTML = "R"+total;
+    
+
 }
 
 showExpenses();
