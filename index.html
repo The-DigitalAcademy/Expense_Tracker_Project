@@ -25,29 +25,16 @@
                                 <span for="type">Type:</span>
                                 <select id="type">
                                     <option value="chooseOne">Choose one...</option>
-                                    <option value="Card">Card</option>
-                                    <option value="Cash">Cash</option>
-                                    <option value="Cryptocoin">Cryptocoin</option>
-                                    <option value="Other">Other</option>
+                                    <option value="Income">Income</option>
+                                    <option value="Expense">Expense</option>
                                 </select>
-                            </div>
-                            <br>
-                            <div>
-                                <span for="name">Name:</span>
-                                <input type="text" id="name">
-                            </div>
-                            <br><br>
-                            <br>
-                            <br>
-                            <div>
-                                <span for="date">Date:</span>
-                                <input type="date" id="date">
                             </div>
                             <br>
                             <div>
                                 <span for="amount">Amount:</span>
                                 <input type="text" id="amount">
                             </div>
+                            <br>
                         </div>
                         <br>
                        
@@ -57,17 +44,7 @@
                             <h3 class="expense">EXPENSE</h3><span id="expenseS">R0</span>
                           </div>
                           <br><br>
-                          <button style="background-color: red;" type="submit" class="buttonSave">- expense</button>
-                        </form>
-                        <div>
-                            <br><br>
-                            <div>
-                                <span for="addIncome">Income:</span>
-                                <input type="text" id="addIncome">
-                            </div>
-                            <br><br>
-                            <button onclick="btnIncome()" type="submit" class="buttonSave">+ income</button>
-                        </form>
+                          <button style="background-color: rgb(0, 94, 255);" type="submit" class="buttonSave">Add transaction</button>
                         </div>
                 </div>
             </section>
@@ -78,8 +55,6 @@
                             <th>Type</th>
                             <th>Name</th>
                             <th>Date</th>
-                            <th>Amount</th>
-                            <th>Options</th>
                         </tr>
                     </thead>
                     <tbody id="expenseTable">
