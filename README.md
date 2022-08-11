@@ -1,4 +1,3 @@
-# Expense_Tracker_Project
+# Mapaseka_Tracker expense 1
 
 [Link](https://the-digitalacademy.github.io/Mapaseka_expense-tracker-1/)
-# expense_tracker_mapaseka
